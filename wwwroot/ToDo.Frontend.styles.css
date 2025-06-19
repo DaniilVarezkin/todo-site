@@ -1,0 +1,54 @@
+/* /Layout/MainLayout.razor.rz.scp.css */
+/* /Layout/NavMenu.razor.rz.scp.css */
+/* /Shared/Components/CalendarCell.razor.rz.scp.css */
+.calendar-cell[b-z6fsec1s3i] {
+    transition: background-color 0.2s, transform 0.2s;
+    vertical-align: top;
+    height: 180px;
+    cursor: pointer;
+    position: relative;
+    min-width: 150px;
+}
+
+    .calendar-cell:hover[b-z6fsec1s3i] {
+        background-color: rgba(0,0,0,0.08);
+    }
+
+.today-cell[b-z6fsec1s3i] {
+    background-color: rgba(25,118,210,0.1);
+    border: 2px solid rgba(25,118,210,0.6) !important;
+}
+
+.out-month[b-z6fsec1s3i] {
+    background-color: #f5f5f5;
+}
+
+.task-chip[b-z6fsec1s3i] {
+    margin-bottom: 4px;
+    width: 100%;
+}
+/* /Shared/Components/TaskTableComponent.razor.rz.scp.css */
+/* Задаём фиксированную схему раскладки таблицы */
+.my-fixed-table[b-eqzvim6pjf] {
+    table-layout: fixed;
+    width: 100%;
+}
+
+/* Колонке удаления даём ровно под кнопку */
+.delete-column[b-eqzvim6pjf] {
+    width: 2.5rem; /* под размер Size.Small */
+}
+
+/* Скрываем кнопку, но она продолжает занимать место */
+.delete-column-hiden[b-eqzvim6pjf] {
+    width: 2.5rem;
+    visibility: hidden;
+    transition: visibility 0s linear 0.1s;
+}
+
+/* При наведении на строку — показываем */
+.delete-column-visible[b-eqzvim6pjf] {
+    width: 2.5rem;
+    visibility: visible;
+    transition-delay: 0s;
+}
